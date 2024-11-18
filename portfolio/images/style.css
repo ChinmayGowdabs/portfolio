@@ -1,0 +1,372 @@
+/*body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #8ebddd;
+    color: white;
+}
+header-h1{
+    color:#fff
+}
+
+section {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#projects .project {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+h1, h2 {
+    color: #007acc;
+}
+h3{
+    color: #500d24;
+}
+
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.gallery {
+    column-count: 3;
+    column-gap: 15px;
+    padding: 20px;
+    max-width: 80%;
+    margin: auto;
+    size: 50px;
+}
+.gallery-item{
+    margin-bottom :0%;
+    display: inline-block;
+    max-width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.gallery-item img{
+    width: 100px;
+    height: auto;
+
+}
+.resize {
+    width: 200px;
+    height: 200px;
+    padding-left: 0%;
+    margin-left: 0%;
+}
+.project {
+    margin-bottom: 20px;
+}
+
+.project-img {
+    width: 100%; /* Or a specific width, like 300px 
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.slide-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.project-slide {
+    display: none;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+button:nth-child(2) { /* Left button 
+    left: 0;
+}
+
+button:nth-child(3) { /* Right button 
+    right: 0;
+}
+/*/
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #007acc;
+    color: white;
+    text-align: center;
+    padding: 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+header .gallery img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid #fff;
+    margin-top: 1rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+section {
+    padding: 2rem 10%;
+}
+
+h2 {
+    border-bottom: 2px solid #007acc;
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #007acc;
+}
+
+.project, #about {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #007acc;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+.slide-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-slide {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.project-slide:hover {
+    transform: scale(1.05);
+}
+
+button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+
+button:hover {
+    background-color: #005f99;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #007acc;
+    color: white;
+}
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    /* Adjust other elements as needed */
+}
+.project-slide {
+    display: block;
+    width: 100%; /* Change to a larger size or use a specific value like 400px */
+    height: auto; /* Ensures the aspect ratio is maintained */
+    margin: 10px 0; /* Adds space between the images */
+}
+
+.slide-container {
+    display: flex;
+    gap: 10px; /* Adds space between images */
+}
+
+.project-slide {
+    display: none;
+    width: 90%; /* Set a fixed width */
+    height: auto; /* Set a fixed height */
+    border-radius: 5px;
+    object-fit: cover; /* Ensures the image fills the area without distortion */
+}
+
+/* Display the first image initially */
+.slide-container .project-slide:first-child {
+    display: block;
+}
+
+/* General styling for the Skills section */
+#Skills {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+/* Style for the section heading */
+#Skills h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Flexbox container for the images */
+.skills-container {
+    display: flex;
+    justify-content: center;   /* Centers the images horizontally */
+    align-items: center;       /* Centers the images vertically */
+    gap: 1rem;                 /* Space between images */
+    flex-wrap: wrap;           /* Allows images to wrap on smaller screens */
+}
+
+/* Style for each image */
+.skill {
+    width: 200px;              /* Set a fixed width */
+    height: 200px;             /* Set a fixed height */
+    object-fit: cover;         /* Ensures images maintain aspect ratio */
+    border-radius: 10px;       /* Optional: adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for images */
+.skill:hover {
+    transform: translateY(-5px);
+}
+@media (max-width: 768px) {
+    .skill {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* General styles for the header */
+header {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    z-index: 1000;;
+}
+
+/* Navigation styles */
+nav {
+    margin-top: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00aaff;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+nav ul li a.active {
+    color: #00aaff;
+    border-bottom: 2px solid #00aaff;
+}
+#contact a {
+    color: #0077b5; /* LinkedIn blue */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #005582; /* Darker shade on hover */
+    text-decoration: underline;
+}
+#contact a {
+    color: #0077b5; /* LinkedIn blue */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #005582; /* Darker shade on hover */
+    text-decoration: underline;
+}
